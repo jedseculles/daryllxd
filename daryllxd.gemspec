@@ -5,7 +5,7 @@ require 'daryllxd/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "daryllxd"
-  spec.version       = Daryllxd::VERSION
+  spec.version       = DaryllXD::VERSION
   spec.authors       = ["Jedford Seculles", "Mark Anthony Aventura"]
   spec.email         = ["jfjade18@gmail.com", "jeds@sourcepad.com", "marka@sourcepad.com"]
   spec.summary       = %q{A gem inspired from crazy way of talking by Daryll, our colleague.}
