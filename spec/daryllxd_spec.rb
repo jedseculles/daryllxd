@@ -21,4 +21,19 @@ RSpec.describe String do
       expect("pagkain".darify!).to eq "inpagka"
     end
   end
+
+  context "4 syllables, multiple vowels" do
+    it "rotates the syllable order" do
+      expect("tarantado".darify!).to eq "dotaranta"
+      expect("maaari".darify!).to eq "rimaaa"
+    end
+  end
+
+  context 'reserved words' do
+    it 'follow their own rules' do
+      expect("jedford".darify!).to eq "dejdorf"
+      expect("buhat".darify!).to eq "hatbuts"
+      expect("bente".darify!).to eq "tebents"
+    end
+  end
 end
