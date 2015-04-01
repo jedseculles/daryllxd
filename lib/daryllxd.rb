@@ -2,7 +2,7 @@ require "daryllxd/version"
 
 class String
   def darify!
-    downcase.scan(/([^aeiou]?[aeiou]([^aeiou](?![aeiou]))?)/).reverse.join.squeeze
+    downcase.scan(/([^aeiou]?[aeiou]([^aeiou](?![aeiou]))?)/).rotate.join.squeeze
   end
 end
 
