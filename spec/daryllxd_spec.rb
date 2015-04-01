@@ -22,6 +22,12 @@ RSpec.describe String do
     end
   end
 
+  context "sentences" do
+    it "two words" do
+      expect("aw masaket".darify!).to eq "aw ketmasa"
+    end
+  end
+
   context "4 syllables, multiple vowels" do
     it "rotates the syllable order" do
       expect("tarantado".darify!).to eq "dotaranta"

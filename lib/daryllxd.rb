@@ -2,8 +2,12 @@ require "./lib/daryllxd/version"
 
 class String
   def darify!
-    new_str = downcase.scan(/([^aeiou]?[aeiou]([^aeiou](?![aeiou]))?)/).map(&:first)
-    new_str.rotate(new_str.length - 1).join
+    split(' ').map(&:_convert).join(' ')
+  end
+
+  def _convert
+    syllables = downcase.scan(/([^aeiou]?[aeiou]([^aeiou](?![aeiou]))?)/).map(&:first)
+    syllables.rotate(syllables.length - 1).join
   end
 end
 
