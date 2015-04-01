@@ -1,4 +1,4 @@
-require "daryllxd/version"
+require "./lib/daryllxd/version"
 
 class String
   def darify!

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jfjade18@gmail.com", "jeds@sourcepad.com", "marka@sourcepad.com"]
   spec.summary       = %q{A gem inspired from crazy way of talking by Daryll, our colleague.}
   spec.description   = %q{This gem will reverse any word by syllables.}
-  spec.homepage      = "www.sourcepad.com"
+  spec.homepage      = "http://sourcepad.com"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
