@@ -21,4 +21,11 @@ RSpec.describe String do
       expect("pagkain".darify!).to eq "inpagka"
     end
   end
+
+  context "sentences" do
+    it "two words" do
+      expect("aw masaket".darify!).to eq "aw ketmasa"
+    end
+  end
+
 end
